@@ -1,0 +1,41 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+        & .card-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 365px;
+            padding: 10px;
+            background-color: rgb(211, 216, 211);
+            border-radius: 10px;
+            flex-grow: 1;
+            flex-basis: 200;
+            gap: 20px;
+            & picture{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                & img{
+                    border-radius: 12px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            & .card-title{
+                font-size: 25px;
+            }
+            & .card-text{
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+}

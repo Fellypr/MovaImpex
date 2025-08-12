@@ -1,0 +1,14 @@
+.NavBarMain{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(211, 216, 211);
+    padding: 10px;
+        & h2{
+            font-size: 35px;
+        }
+}
+.languagens{
+    display: flex;
+    gap: 10px;
+}

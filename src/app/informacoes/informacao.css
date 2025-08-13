@@ -124,6 +124,54 @@
   }
 }
 
+@media screen and (max-width: 1242px) {
+  .informacoesSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    & .informacoesDeImportacaoEexportacao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      flex-wrap: wrap;
+      gap: 20px;
+      & .informacoesConteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        background-color: white;
+        padding: 10px;
+        border-radius: 12px;
+        gap: 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        & ul {
+          & li {
+            font-size: 18px;
+            height: auto;
+          }
+        }
+      }
+      & img {
+        width: 200;
+        border-radius: 12px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 700px) {
   .TiposDeContainers {
     display: flex;
@@ -179,6 +227,26 @@
         font-size: 12px !important;
         height: auto;
       }
+    }
+  }
+
+  .informacoesSobreEla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    padding: 10px;
+    & .informacoesSobreElaTitle {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      font-size: 27px;
+      font-weight: 500;
     }
   }
 }

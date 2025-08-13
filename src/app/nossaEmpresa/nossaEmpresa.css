@@ -17,11 +17,11 @@
   padding: 50px;
   gap: 40px;
   & .nossaEmpresaImg {
-    width: 500;
+    width: 300;
   }
 }
 .badge {
-  width: 400;
+  width: 300;
 }
 
 .nossaEmpresaText1 {
@@ -95,14 +95,14 @@
 
 @media screen and (max-width: 700px) {
   .badge{
-    width: 250;
+    width: 150;
   }
   .nossaEmpresaSection{
     width: 100%;
     padding: 10px;
   }
   .nossaEmpresaImg{
-    width: 300 !important;
+    width: 200 !important;
   }
     
 }

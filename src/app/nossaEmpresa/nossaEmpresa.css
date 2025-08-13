@@ -16,12 +16,20 @@
   height: auto;
   padding: 50px;
   gap: 40px;
-  & .nossaEmpresaImg {
-    width: 300;
+  & picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    & img{
+      width: 40%;
+      height: auto;
+    }
   }
 }
 .badge {
-  width: 300;
+  width: 30%;
 }
 
 .nossaEmpresaText1 {
@@ -95,14 +103,14 @@
 
 @media screen and (max-width: 700px) {
   .badge{
-    width: 150;
+    width: 60% !important;
   }
   .nossaEmpresaSection{
     width: 100%;
     padding: 10px;
   }
   .nossaEmpresaImg{
-    width: 200 !important;
+    width: 70% !important;
   }
     
 }

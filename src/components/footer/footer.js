@@ -27,11 +27,11 @@ export default function Footer() {
           </p>
         </div>
         <div className="ancorasDeNavegacao">
-            <a href="/informacoes">Serviços</a>
+            <a href="/servicos">Serviços</a>
             <a href="/informacoes">Informacões</a>
-            <a href="/informacoes">Políticas de Privacidade</a>
-            <a href="/informacoes">Contato</a>
-            <a href="/empresa">NossaEmpresa</a>
+            <a href="/politica">Políticas de Privacidade</a>
+            <a href="/contato">Contato</a>
+            <a href="/nossaEmpresa">NossaEmpresa</a>
           </div>
       </div>
     </footer>

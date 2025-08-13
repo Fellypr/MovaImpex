@@ -1,0 +1,95 @@
+.contatoMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding: 50px;
+  & .contatoSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    & .contatoContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      gap: 40px;
+      margin-top: 3rem;
+      flex-wrap: wrap;
+      & .contatoItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+        height: auto;
+        gap: 10px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+        & .contatoIcon {
+          width: 80px;
+          height: 80px;
+        }
+        & p {
+          font-size: 25px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+
+
+.observation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  gap: 10px;
+  flex-wrap: wrap;
+  & p {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+@media screen  and (max-width: 444px) {
+   & .contatoItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+        height: auto;
+        gap: 10px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+        & .contatoIcon {
+          width: 80px;
+          height: 80px;
+        }
+        & p {
+          font-size: 20px !important;
+          font-weight: 500;
+        }
+      }
+    
+}

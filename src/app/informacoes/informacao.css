@@ -1,0 +1,184 @@
+.informacoesMain {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  gap: 40px;
+}
+.informacoesSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  & .informacoesDeImportacaoEexportacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+    & .informacoesConteudo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: auto;
+      height: auto;
+      background-color: white;
+      padding: 10px;
+      border-radius: 12px;
+      gap: 10px;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      & ul {
+        & li {
+          font-size: 18px;
+          height: auto;
+        }
+      }
+    }
+    & img {
+      width: 300;
+      border-radius: 12px;
+    }
+  }
+}
+
+.informacoesConteudoTitle {
+  width: 400px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.informacoestext {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  height: auto;
+  gap: 5px;
+  margin-top: 4rem;
+  & .informacoesListra {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #199ec5;
+    height: 2.5rem;
+    color: #199ec5;
+  }
+}
+
+.TiposDeContainers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 60vh;
+  & .mySwiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 100%;
+    & .swiperSlide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.informacoesSobreEla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  margin-top: 5rem;
+  padding: 10px;
+  & .informacoesSobreElaTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .TiposDeContainers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    & .mySwiper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      & .swiperSlide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        & img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .informacoesConteudoTitle {
+    width: 250px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .informacoesConteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+    gap: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    & ul {
+      & li {
+        font-size: 12px !important;
+        height: auto;
+      }
+    }
+  }
+}

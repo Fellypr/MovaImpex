@@ -1,9 +1,14 @@
+"use client";
+
+
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Card from "@/components/card/card";
-import Navegue from "@/components/navegue/navegue";
 import Footer from "@/components/footer/footer";
+
 export default function Home() {
+
+
   return (
     <div>
       <Navbar />
@@ -107,7 +112,7 @@ export default function Home() {
               Efetuamos o desembaraço aduaneiro para liberação da carga nos
               portos e aeroportos de todo o Brasil.
             </p>
-            <a style={{ fontSize: "17px",textDecoration: "underline",color: "red",cursor: "pointer" }}>Saiba mais sobre os nosso serviços</a>
+            <a style={{ fontSize: "17px",textDecoration: "underline",color: "red",cursor: "pointer" }} href="/servicos">Saiba mais sobre os nosso serviços</a>
           </div>
         </div>
       </div>
@@ -115,7 +120,7 @@ export default function Home() {
       <div className="mapa">
             <div className="mapaTitle">
                 <div className="listraText"></div>
-                <p style={{ fontSize: "28px", fontWeight: "medium" }}>Onde estamos</p>
+                <p style={{ fontSize: "28px", fontWeight: "medium" }}>Onde Estamos Localizados</p>
             </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.312752922606!2d-47.354208225406126!3d-22.753771832418977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89bd854865baf%3A0xf6b36cd929c692ee!2sAmerican%20Square%20-%20Torre%20New%20York!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"

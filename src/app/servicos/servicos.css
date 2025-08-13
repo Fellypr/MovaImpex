@@ -9,6 +9,10 @@
 .servicosTitle{
     font-size: 25px;
     font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
 }
 
 

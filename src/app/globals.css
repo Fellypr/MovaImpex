@@ -2,14 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .cardsMain {
-  background-color: rgb(24, 196, 61);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: auto;
+  padding: 50px;
 }
 
 a {
@@ -21,15 +22,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 79vh;
-  padding: 10px;
+  height: auto;
   & .banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     padding: 0px 10px 0px 0px;
-    background-color: rgb(221, 146, 8);
+    background-color: #1ba3c0;
     & picture {
       display: flex;
       justify-content: center;
@@ -44,15 +44,17 @@ a {
     & .bannerText {
       display: flex;
       flex-direction: column;
-      justify-content:space-between;
+      justify-content: space-between;
       align-items: center;
       width: 40%;
       height: 330px;
       text-align: left;
       padding: 10px;
-      gap: 20px;
+      gap: 70px;
+      font-family: "Segoe UI", sans-serif;
       & .bannerText1 {
-        font-size: 50px;
+        font-weight: medium;
+        font-size: 45px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,9 +62,345 @@ a {
         color: white;
       }
       & .bannerText2 {
+        font-weight: normal;
         text-align: center;
-        font-size: 20px;
+        font-size: 16px;
       }
     }
   }
+}
+
+.oqueMovaPodeFazerMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 10px;
+  & .oqueMovaPodeFazerSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    & .TextMain {
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 20px;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      gap: 10px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: medium;
+      & h1 {
+        font-weight: medium;
+        font-size: 28px;
+      }
+      & .listraText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10px;
+        height: 50px;
+        background-color: #1ba3c0;
+      }
+    }
+    & .Container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 87%;
+      height: auto;
+      gap: 10px;
+
+      padding: 10px;
+      & .TextContainer {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        & .TextContainerTitle {
+          font-weight: 500;
+          font-size: 28px;
+        }
+        & .TextContainerText {
+          font-weight: normal;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.navegueMain {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  gap: 20px;
+
+  & .mapaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  & .mapaTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    font-weight: 500;
+    font-size: 28px;
+    gap: 10px;
+    & .listraText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10px;
+      height: 50px;
+      background-color: #1ba3c0;
+    }
+  }
+}
+
+.footerMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 10px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #1ba3c0;
+}
+
+@media screen and (max-width: 1060px) {
+  .bannerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 330px;
+    text-align: left;
+    padding: 10px;
+    gap: 30px !important;
+    font-family: "Segoe UI", sans-serif;
+    & .bannerText1 {
+      font-weight: medium;
+      font-size: 35px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      color: white;
+    }
+    & .bannerText2 {
+      font-weight: normal;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .bannerMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    & .banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 0px 10px 0px 0px;
+      background-color: #1ba3c0;
+      height: auto;
+      & picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+        height: auto;
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      & .bannerText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 330px;
+        text-align: left;
+        padding: 10px;
+        gap: 10px !important;
+        font-family: "Segoe UI", sans-serif;
+        & .bannerText1 {
+          font-weight: medium;
+          font-size: 27px !important;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 200px;
+          color: white;
+        }
+        & .bannerText2 {
+          font-weight: normal;
+          text-align: center;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .bannerMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    & .banner {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 10px;
+      padding: 0px 0px 0px 0px;
+      background-image: url("/img/Design sem nome.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: auto;
+      & picture {
+        display: none;
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      & .bannerText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 330px;
+        text-align: left;
+        padding: 10px;
+        gap: 0px !important;
+        font-family: "Segoe UI", sans-serif;
+        background-color: rgba(1, 120, 255, 0);
+        backdrop-filter: blur(3px);
+        & .bannerText1 {
+          font-weight: bold;
+          font-size: 27px !important;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 200px;
+          color: white;
+        }
+        & .bannerText2 {
+          font-weight: bold;
+          text-align: center;
+          font-size: 12px;
+          color: #1ba3c0;
+        }
+      }
+    }
+  }
+  .cardsMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 0px;
+}
+}
+
+@media screen and (max-width: 425px) {
+  .bannerMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    & .banner {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 10px;
+      padding: 0px 0px 0px 0px;
+      background-image: url("/img/Design sem nome.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: auto;
+      & picture {
+        display: none;
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      & .bannerText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 330px;
+        text-align: left;
+        padding: 10px;
+        gap: 0px !important;
+        font-family: "Segoe UI", sans-serif;
+        background-color: rgba(1, 120, 255, 0);
+        backdrop-filter: blur(3px);
+        & .bannerText1 {
+          font-weight: bold;
+          font-size: 20px !important;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 200px;
+          color: white;
+        }
+        & .bannerText2 {
+          font-weight: bold;
+          text-align: left;
+          font-size: 9px;
+          color: #1ba3c0;
+        }
+      }
+    }
+  }
+}
+
+@media screen  and (max-width: 400px) {
+ .Container{
+  & img{
+    width: 200px;
+    height: 200px;
+
+  }
+ }
+ .TextContainerTitle{
+  font-size: 24px !important;
+ }
+ .TextContainerText{
+  font-size: 12px !important;
+ }
 }

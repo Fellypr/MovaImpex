@@ -1,0 +1,44 @@
+.servicosMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.servicosTitle{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+
+.servicosSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    padding: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .servicosSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .servicosTitle{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .servicosText{
+        font-size: 15px;
+    }
+    
+}

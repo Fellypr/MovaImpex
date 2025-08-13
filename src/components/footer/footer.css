@@ -1,0 +1,112 @@
+.footerMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  background-color: #1ba3c0;
+  padding: 10px;
+  gap: 20px;
+  & .ajuda {
+    font-size: 30px;
+    font-weight: medium;
+  }
+  & .informationsFotter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    & .contato {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 16px;
+      width: 100%;
+    }
+  }
+}
+
+.logoWithDirection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 8rem;
+}
+
+.ancorasDeNavegacao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  height: auto;
+    & a{
+        text-decoration: underline;
+        color: rgb(255, 0, 0);
+    }
+    & a:hover{
+        color: rgb(0, 0, 0);
+    }
+}
+
+@media screen  and (max-width: 700px) {
+  .footerMain{
+    padding: 0px;
+  }
+  .informationsFotter{
+    padding: 0px !important;
+  }
+  .contato {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 12px !important;
+      width: 100%;
+    }
+  .ancorasDeNavegacao{
+    width: 100% !important;
+    font-size: 12px !important;
+  }
+}
+
+@media screen  and (max-width: 491px) {
+  .footerMain{
+    padding: 0px;
+  }
+  .ajuda{
+    font-size: 20px !important;
+  }
+  .informationsFotter{
+    padding: 0px !important;
+  }
+  .contato {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 12px !important;
+      width: 100%;
+    }
+  .ancorasDeNavegacao{
+    width: 100% !important;
+    font-size: 12px !important;
+    gap: 7px !important;
+  }
+}
+
+@media screen  and (max-width: 491px) {
+  
+  .ancorasDeNavegacao{
+    width: 100% !important;
+    font-size: 10px !important;
+    gap: 7px !important;
+  }
+}

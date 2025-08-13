@@ -1,0 +1,24 @@
+.navegueMain{
+    gap: 20px;
+
+    & .navegueTitle{
+        font-weight: 400;
+        font-size: 38px;
+    }
+    & ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        list-style: none;
+        text-decoration: underline;
+        color: red;
+        & li{
+            cursor: pointer;
+            & a{
+                text-decoration: none;
+                color: rgb(245, 0, 0);
+            }
+        }
+    }
+}

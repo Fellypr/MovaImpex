@@ -1,14 +1,77 @@
-.NavBarMain{
+.NavBarMain {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: aliceblue;
+  padding: 10px;
+  & .custom-logoEnteredLazyloaded {
+    width: 130px;
+    height: 60px;
+  }
+  & h2 {
+    font-weight: 500;
+    font-size: 35px;
+  }
+}
+.languagens {
+  display: flex;
+  gap: 10px;
+  & .Bandeira {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .NavBarMain {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(211, 216, 211);
+    width: 100%;
+    background-color: aliceblue;
     padding: 10px;
-        & h2{
-            font-size: 35px;
-        }
-}
-.languagens{
+    & .custom-logoEnteredLazyloaded {
+      width: 120px;
+      height: 50px;
+    }
+    & h2 {
+      font-weight: 500;
+      font-size: 25px;
+    }
+  }
+  .languagens {
     display: flex;
     gap: 10px;
+    & .Bandeira {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .NavBarMain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: aliceblue;
+    padding: 10px;
+    & .custom-logoEnteredLazyloaded {
+      width: 80px;
+      height: auto;
+    }
+    & h2 {
+      font-weight: 500;
+      font-size: 17px;
+    }
+  }
+  .languagens {
+    display: flex;
+    gap: 10px;
+    & .Bandeira {
+      width: 30px;
+      height: 30px;
+    }
+  }
 }

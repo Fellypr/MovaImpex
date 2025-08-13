@@ -6,7 +6,7 @@ export default function Card() {
     <div className="card">
       <Link href="/servicos" className="card-content">
         <picture>
-          <img src="/img/Design sem nome.png" alt="Banner" />
+          <img src="/img/capacitacao-presencial-du-e-novo-processo-de-exportacao.jpg" alt="Banner" />
         </picture>
         <h3 className="card-title">Serviços</h3>
         <p className="card-text">
@@ -15,25 +15,25 @@ export default function Card() {
         </p>
       </Link>
 
-      <Link href="/empresa" className="card-content">
+      <Link href="/nossaEmpresa" className="card-content">
         <picture>
-          <img src="/img/Design sem nome.png" alt="Banner" />
+          <img src="/img/GettyImages-1140820205.jpg" alt="Banner" />
         </picture>
         <h3 className="card-title">Nossa Empresa</h3>
         <p className="card-text">
           Acreditamos Que o crescimento e solidez é construído através de
-          transparência e honestidade.Saiba mais
+          transparência e honestidade. Saiba mais
         </p>
       </Link>
 
       <Link href="/informacoes" className="card-content">
         <picture>
-          <img src="/img/Design sem nome.png" alt="Banner" />
+          <img src="/img/capacitacao-presencial-exportacao-passo-a-passo.jpg" alt="Banner" />
         </picture>
         <h3 className="card-title">Informações</h3>
         <p className="card-text">
           Acompanhamos Sua carga, da preparação do embarque até a chegada ao
-          destino na Importação e na Exportação.Saiba mais
+          destino na Importação e na Exportação. Saiba mais
         </p>
       </Link>
     </div>

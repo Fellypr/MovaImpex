@@ -1,0 +1,108 @@
+.nossaEmpresaMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  gap: 40px;
+}
+
+.nossaEmpresaSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  height: auto;
+  padding: 50px;
+  gap: 40px;
+  & .nossaEmpresaImg {
+    width: 500;
+  }
+}
+.badge {
+  width: 400;
+}
+
+.nossaEmpresaText1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.nossaEmpresaCardMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 10px;
+  & .nossaEmpresaCardSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 40px;
+    flex-wrap: wrap;
+    & .nossaEmpresaCard {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 200px;
+      height: 300px;
+      padding: 10px;
+      border-radius: 10px;
+      gap: 20px;
+      background-color: #f5f5f5;
+      & .nossaEmpresaCardImg {
+        width: 140px;
+      }
+    }
+  }
+}
+
+.nossaEmpresaTextcard {
+  font-size: 20px;
+  font-weight: 500;
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.nossaEmpresaCardText2{
+    font-size: 28px;
+}
+
+.listraText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.5rem;
+    background-color: #1ba3c0;
+    height: 2rem;
+}
+
+.nossaEmpresaText {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 700px) {
+  .badge{
+    width: 250;
+  }
+  .nossaEmpresaSection{
+    width: 100%;
+    padding: 10px;
+  }
+  .nossaEmpresaImg{
+    width: 300 !important;
+  }
+    
+}

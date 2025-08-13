@@ -44,7 +44,7 @@ export default function Home() {
           <div className="Container">
             <picture>
               <img
-                src="https://movaimpex.com.br/wp-content/uploads/2021/11/ship.png"
+                src="/img/imgHome/ship.png"
                 alt="Banner"
                 width={300}
                 height={300}
@@ -62,7 +62,7 @@ export default function Home() {
             </div>
             <picture>
               <img
-                src="https://movaimpex.com.br/wp-content/uploads/2021/11/advice.png"
+                src="/img/imgHome/advice.png"
                 alt="Banner"
                 width={300}
                 height={300}
@@ -81,7 +81,7 @@ export default function Home() {
             </div>
             <picture>
               <img
-                src="https://movaimpex.com.br/wp-content/uploads/2021/11/cargo.png"
+                src="/img/imgHome/cargo.png"
                 alt="Banner"
                 width={300}
                 height={300}
@@ -100,7 +100,7 @@ export default function Home() {
             </div>
             <picture>
               <img
-                src="https://movaimpex.com.br/wp-content/uploads/2021/11/container.png"
+                src="/img/imgHome/container.png"
                 alt="Banner"
                 width={300}
                 height={300}

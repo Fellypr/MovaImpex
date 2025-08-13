@@ -23,14 +23,14 @@ export default function Contato() {
         <div className="languagens">
           <img
             decoding="async"
-            src="https://movaimpex.com.br/wp-content/uploads/2021/11/united-states-2.png"
+            src="/img/Logo/bandeiras/united-states-2.png"
             alt="Bandeira EUA"
             loading="lazy"
             className="Bandeira"
           />
           <img
             decoding="async"
-            src="https://movaimpex.com.br/wp-content/uploads/2021/11/brazil-1.png"
+            src="/img/Logo/bandeiras/brazil-1.png"
             alt="Bandeira Brasil"
             loading="lazy"
             className="Bandeira"

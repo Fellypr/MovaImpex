@@ -4,11 +4,12 @@
     align-items: center;
     flex-direction: column;
     height: auto;
+    padding: 20px;
 }
 
 .servicosTitle{
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -39,7 +40,7 @@
     }
     .servicosTitle{
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 600;
     }
     .servicosText{
         font-size: 15px;

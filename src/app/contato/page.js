@@ -1,56 +1,93 @@
 import "./contato.css";
 import "../../components/navbar/Navbar.css";
-import Link from "next/link";
-
+import Navbar from "@/components/navbar/Navbar";
 import { CiPhone } from "react-icons/ci";
 import { TfiEmail } from "react-icons/tfi";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdAccessTime } from "react-icons/md";
 import Footer from "@/components/footer/footer";
+
+import Link from "next/link";
 
 export default function Contato() {
   return (
     <>
       <div className="NavBarMain">
-        <Link href="/">
-          <img
-            src="/img/Logo/Mova-Impex-PNG-2-1-1.png"
-            className="custom-logoEnteredLazyloaded"
-            alt="Mova Impex"
-            decoding="async"
-            loading="lazy"
-          />
-        </Link>
-        <h2 className="titleHome">Contato</h2>
-        <div className="languagens">
-          <img
-            decoding="async"
-            src="/img/Logo/bandeiras/united-states-2.png"
-            alt="Bandeira EUA"
-            loading="lazy"
-            className="Bandeira"
-          />
-          <img
-            decoding="async"
-            src="/img/Logo/bandeiras/brazil-1.png"
-            alt="Bandeira Brasil"
-            loading="lazy"
-            className="Bandeira"
-          />
-        </div>
-      </div>
-
+            <Link href="/">
+              <img
+                src="/img/Logo/Mova-Impex-PNG-2-1-1.png"
+                className="custom-logoEnteredLazyloaded"
+                alt="Mova Impex"
+                decoding="async"
+                loading="lazy"
+              />
+            </Link>
+            <div className="titleNav">
+              <h2 className="titleHome">
+                <Link href="/">Home</Link>
+              </h2>
+              <h2 className="titleHome">
+                <Link href="/nossaEmpresa">Nossa Empresa</Link>
+              </h2>
+              <h2 className="titleHome">
+                <Link href="/servicos"> Serviços</Link>
+              </h2>
+              <h2 className="titleHome">
+                <Link href="/informacoes">Informações</Link>
+              </h2>
+              <h2 className="titleHome"  >
+                <Link href="/contato" style={{ color: "#21A2BF" }}>Contato</Link>
+              </h2>
+            </div>
+            <div className="languagens">
+              <img
+                decoding="async"
+                src="/img/Logo/bandeiras/united-states-2.png"
+                alt="Bandeira EUA"
+                loading="lazy"
+                className="Bandeira"
+              />
+              <img
+                decoding="async"
+                src="/img/Logo/bandeiras/brazil-1.png"
+                alt="Bandeira Brasil"
+                loading="lazy"
+                className="Bandeira"
+              />
+            </div>
+          </div>
       <div className="contatoMain">
         <div className="contatoSection">
-          <h1 className="contatoTitle">Precisa de ajuda? Fale conosco!</h1>
+          <h1 className="contatoTitle">Fale Conosco</h1>
+
           <div className="contatoContainer">
             <div className="contatoItem">
               <CiPhone className="contatoIcon" />
               <p>(19) 3013-4040</p>
             </div>
+
             <div className="contatoItem">
               <TfiEmail className="contatoIcon" />
               <p>contato@movaimpex.com.br</p>
             </div>
+
+            <div className="contatoItem">
+              <FaLocationDot className="contatoIcon" />
+              <p>
+                Avenida Brasil, 1500 Ed. New York – Sala 207, Vila Frezzarim,
+                Americana – SP, 13465-785 – Brasil
+              </p>
+            </div>
+
+            <div className="contatoItem">
+              <MdAccessTime className="contatoIcon" />
+              <p>
+                Segunda à Quinta-feira: 9h às 18h <br />
+                Sexta-feira: até as 17h
+              </p>
+            </div>
           </div>
+
           <div className="mapa">
             <div className="mapaTitle">
               <div className="listraText"></div>
@@ -69,11 +106,6 @@ export default function Contato() {
               className="mapaContainer"
             ></iframe>
           </div>
-        </div>
-
-        <div className="observation">
-            <img src="/img/Logo/Company-rafiki.png" alt="Observation" width={300}/>
-            <p>OBS: Não realizamos atendimento aos sábados, domingos e feriados.</p>
         </div>
       </div>
 

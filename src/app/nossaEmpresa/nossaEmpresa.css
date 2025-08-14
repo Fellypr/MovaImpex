@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   height: auto;
   gap: 40px;
 }
@@ -11,25 +12,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   width: 85%;
   height: auto;
-  padding: 50px;
+  padding: 0px;
   gap: 40px;
-  & picture{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
     & img{
-      width: 40%;
+      width: 20%;
       height: auto;
     }
-  }
 }
 .badge {
-  width: 30%;
+  width: 20%;
 }
 
 .nossaEmpresaText1 {
@@ -103,14 +96,21 @@
 
 @media screen and (max-width: 700px) {
   .badge{
-    width: 60% !important;
+    width: 30% !important;
   }
   .nossaEmpresaSection{
     width: 100%;
     padding: 10px;
   }
   .nossaEmpresaImg{
-    width: 70% !important;
+    width: 30% !important;
+  }
+    
+}
+
+@media screen and (max-width: 490px) {
+  .nossaEmpresaSection{
+    flex-direction: column;
   }
     
 }

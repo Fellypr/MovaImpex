@@ -4,19 +4,33 @@
     align-items: center;
     flex-direction: column;
     height: auto;
-    padding: 20px;
+    padding: 60px;
 }
 
 .servicosTitle{
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 15px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    color: rgb(78, 78, 78);
 }
 
+.servicosTitleMain{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
 
+        & p{
+            font-size: 25px;
+            font-weight: 600;
+            color: rgb(78, 78, 78);
+
+        }
+}
 
 .servicosSection{
     display: flex;
@@ -24,8 +38,11 @@
     align-items: center;
     flex-direction: column;
     width: 80%;
-    height: auto;
-    padding: 50px;
+    padding: 22px;
+}
+.servicosText{
+    font-size: 16px;
+    color: rgb(78, 78, 78);
 }
 
 @media screen and (max-width: 700px) {

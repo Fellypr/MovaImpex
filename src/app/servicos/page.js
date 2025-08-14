@@ -16,8 +16,25 @@ export default function Servicos() {
             loading="lazy"
           />
         </Link>
-
-        <h2 className="titleHome">Serviços</h2>
+        <div className="titleNav">
+          <h2 className="titleHome">
+            <Link href="/">Home</Link>
+          </h2>
+          <h2 className="titleHome">
+            <Link href="/nossaEmpresa">
+              Nossa Empresa
+            </Link>
+          </h2>
+          <h2 className="titleHome">
+            <Link href="/servicos" style={{ color: "#21A2BF" }}> Serviços</Link>
+          </h2>
+          <h2 className="titleHome">
+            <Link href="/informacoes">Informações</Link>
+          </h2>
+          <h2 className="titleHome">
+            <Link href="/contato">Contato</Link>
+          </h2>
+        </div>
         <div className="languagens">
           <img
             decoding="async"
@@ -36,6 +53,11 @@ export default function Servicos() {
         </div>
       </div>
       <div className="servicosMain">
+        <div className="servicosTitleMain">
+          <p>Importação e Exportação</p>
+          <p>Assessoria Gestão da logística</p>
+          <p> Despacho Aduaneiro</p>
+        </div>
         <div className="servicosSection">
           <p className="servicosTitle">
             Prestamos serviços para todas as empresas que queiram vender seus
@@ -137,11 +159,15 @@ export default function Servicos() {
             • Desembaraço aduaneiro e emissão de D. I. (Declaração de
             Importação), R. E. (Registro de Exportação) e D.S.E. (Declaração
             Simplificada de Exportação) e emissão de todos os registros e
-            comprovantes do Siscomex;<br/><br/>• Contratação de seguros;<br/><br/> • Elaboração de
-            documentos na Importação e Exportação e certificados para
-            exportação; <br/><br/>• Análise da legislação quanto ao NCM e HS do produto,
-            para verificar se há impedimentos ou se o produto necessita de
-            anuência de algum órgão governamental.
+            comprovantes do Siscomex;
+            <br />
+            <br />• Contratação de seguros;
+            <br />
+            <br /> • Elaboração de documentos na Importação e Exportação e
+            certificados para exportação; <br />
+            <br />• Análise da legislação quanto ao NCM e HS do produto, para
+            verificar se há impedimentos ou se o produto necessita de anuência
+            de algum órgão governamental.
           </p>
         </div>
       </div>

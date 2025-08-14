@@ -83,35 +83,49 @@ export default function PoliticaDePrivacidade() {
   return (
     <div>
       <div className="NavBarMain">
-        <Link href="/">
-          <img
-            src="/img/Logo/Mova-Impex-PNG-2-1-1.png"
-            className="custom-logoEnteredLazyloaded"
-            alt="Mova Impex"
-            decoding="async"
-            loading="lazy"
-          />
-        </Link>
-
-        <h2 className="titleHome">Informações</h2>
-        <div className="languagens">
-          <img
-            decoding="async"
-            src="/img/Logo/bandeiras/united-states-2.png"
-            alt="Bandeira EUA"
-            loading="lazy"
-            className="Bandeira"
-          />
-          <img
-            decoding="async"
-            src="/img/Logo/bandeiras/brazil-1.png"
-            alt="Bandeira Brasil"
-            loading="lazy"
-            className="Bandeira"
-          />
-        </div>
-      </div>
-
+            <Link href="/">
+              <img
+                src="/img/Logo/Mova-Impex-PNG-2-1-1.png"
+                className="custom-logoEnteredLazyloaded"
+                alt="Mova Impex"
+                decoding="async"
+                loading="lazy"
+              />
+            </Link>
+            <div className="titleNav">
+              <h2 className="titleHome">
+                <Link href="/">Home</Link>
+              </h2>
+              <h2 className="titleHome">
+                <Link href="/nossaEmpresa">Nossa Empresa</Link>
+              </h2>
+              <h2 className="titleHome">
+                <Link href="/servicos"> Serviços</Link>
+              </h2>
+              <h2 className="titleHome">
+                <Link href="/informacoes" style={{ color: "#21A2BF" }}>Informações</Link>
+              </h2>
+              <h2 className="titleHome"  >
+                <Link href="/contato">Contato</Link>
+              </h2>
+            </div>
+            <div className="languagens">
+              <img
+                decoding="async"
+                src="/img/Logo/bandeiras/united-states-2.png"
+                alt="Bandeira EUA"
+                loading="lazy"
+                className="Bandeira"
+              />
+              <img
+                decoding="async"
+                src="/img/Logo/bandeiras/brazil-1.png"
+                alt="Bandeira Brasil"
+                loading="lazy"
+                className="Bandeira"
+              />
+            </div>
+          </div>
       <div className="informacoesMain">
         <div className="informacoestext">
           <div className="informacoesListra">-</div>

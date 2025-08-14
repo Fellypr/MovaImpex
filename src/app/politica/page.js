@@ -17,7 +17,7 @@ export default function PoliticaDePrivacidade() {
           />
         </Link>
 
-        <h2 className="titleHome">Políticas</h2>
+        <h2 className="titleHome">Política de Privacidade</h2>
         <div className="languagens">
           <img
             decoding="async"
@@ -35,7 +35,6 @@ export default function PoliticaDePrivacidade() {
           />
         </div>
       </div>
-
       <div className="servicosMain">
         <div className="servicosSection">
           <p className="servicosTitle">SEÇÃO 1 – INFORMAÇÕES GERAIS</p>

@@ -15,8 +15,25 @@ export default function NossaEmpresa() {
             loading="lazy"
           />
         </Link>
-
-        <h2 className="titleHome">Nossa Empresa</h2>
+        <div className="titleNav">
+          <h2 className="titleHome">
+            <Link href="/">Home</Link>
+          </h2>
+          <h2 className="titleHome">
+            <Link href="/nossaEmpresa" style={{ color: "#21A2BF" }}>Nossa Empresa</Link>
+          </h2>
+          <h2 className="titleHome">
+            <Link href="/servicos"> Serviços</Link>
+          </h2>
+          <h2 className="titleHome">
+            <Link href="/informacoes">
+              Informações
+            </Link>
+          </h2>
+          <h2 className="titleHome">
+            <Link href="/contato">Contato</Link>
+          </h2>
+        </div>
         <div className="languagens">
           <img
             decoding="async"
@@ -34,15 +51,12 @@ export default function NossaEmpresa() {
           />
         </div>
       </div>
-
       <div className="nossaEmpresaSection">
-        <picture>
-          <img
-            src="/img/Design-sem-nome-1-1-768x768.png"
-            alt="Banner"
-            className="nossaEmpresaImg"
-          />
-        </picture>
+        <img
+          src="/img/Design-sem-nome-1-1-768x768.png"
+          alt="Banner"
+          className="nossaEmpresaImg"
+        />
         <div className="nossaEmpresaText">
           <p className="nossaEmpresaText1">A Mova Impex</p>
           <p className="nossaEmpresaText2">
@@ -55,7 +69,7 @@ export default function NossaEmpresa() {
       </div>
 
       <div className="nossaEmpresaSection">
-        <img src="/img/target.png" alt="Banner" className="badge"  />
+        <img src="/img/target.png" alt="Banner" className="badge" />
         <div className="nossaEmpresaText">
           <p className="nossaEmpresaText1">Missão</p>
           <p className="nossaEmpresaText2">

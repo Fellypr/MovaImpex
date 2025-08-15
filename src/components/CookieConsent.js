@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import "./cookieConsent.css";
 import { useLanguage } from "../../src/context/LanguageContext";
+import Link from "next/link";
 
 const translations = {
   pt: {
@@ -39,9 +40,9 @@ export default function CookieConsent() {
     <div className="cookie-banner">
       <p>
         {t.message}{" "}
-        <a href="/politica" target="_blank" rel="noopener noreferrer">
+        <Link href="/politica" target="_blank" rel="noopener noreferrer">
           {t.privacyPolicy}
-        </a>.
+        </Link>.
       </p>
       <button onClick={acceptCookies}>{t.accept}</button>
     </div>

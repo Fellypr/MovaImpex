@@ -2,6 +2,7 @@
 
 import "./navegue.css";
 import { useLanguage } from "../../context/LanguageContext";
+import Link from "next/link";
 
 const translations = {
   pt: {
@@ -32,19 +33,19 @@ export default function Navegue() {
       <h1 className="navegueTit">{t.navegue}</h1>
       <ul className="navegueList">
         <li className="navegueListItem">
-          <a href="/nossaEmpresa">{t.empressa}</a>
+          <Link href="/nossaEmpresa">{t.empressa}</Link>
         </li>
         <li className="navegueListItem">
-          <a href="/servicos">{t.servico}</a>
+          <Link href="/servicos">{t.servico}</Link>
         </li>
         <li className="navegueListItem">
-          <a href="/informacoes">{t.informacao}</a>
+          <Link href="/informacoes">{t.informacao}</Link>
         </li>
         <li className="navegueListItem">
-          <a href="/contato">{t.contato}</a>
+          <Link href="/contato">{t.contato}</Link>
         </li>
         <li className="navegueListItem">
-          <a href="/politica">{t.politica}</a>
+          <Link href="/politica">{t.politica}</Link>
         </li>
       </ul>
     </div>

@@ -36,7 +36,7 @@ export default function Contato() {
       <Navbar />
       <div className="contatoMain">
         <div className="contatoSection">
-          <h1 className="contatoTitle">{t.contactTitle}</h1>
+          <h1 className="contatoTitlePageMain">{t.contactTitle}</h1>
 
           <div className="contatoContainer">
             <div className="contatoItem">
@@ -63,7 +63,7 @@ export default function Contato() {
             </div>
           </div>
 
-          <div className="mapa">
+          <div className="mapaContato">
             <div className="mapaTitle">
               <div className="listraText"></div>
               <p style={{ fontSize: "28px", fontWeight: "medium" }}>

@@ -14,7 +14,7 @@ import { useLanguage } from "../../context/LanguageContext";
 
 const translations = {
   pt: {
-    titlemain: "POLÍTICA DE PRIVACIDADE",
+    titlemain: "POLÍTICAS DE PRIVACIDADE",
     // Títulos das seções
     section1Title: "SEÇÃO 1 – INFORMAÇÕES GERAIS",
     section2Title:
@@ -118,7 +118,7 @@ const translations = {
       "Para a solução de controvérsias decorrentes do presente instrumento será aplicado integralmente o Direito brasileiro. Os eventuais litígios deverão ser apresentados no foro da comarca em que se encontra a sede da empresa.",
   },
   en: {
-    titlemain: "PRIVACY POLICY",
+    titlemain: "PRIVACY POLICIES",
     // Section titles
     section1Title: "SECTION 1 – GENERAL INFORMATION",
     section2Title: "SECTION 2 – HOW WE COLLECT USER AND VISITOR PERSONAL DATA?",
@@ -310,7 +310,7 @@ export default function PoliticaDePrivacidade() {
 
       <div className="servicosMain">
         <div className="servicosSection">
-          <p className="servicosTitle">{t.section1Title}</p>
+          <p className="servicosTitle"><b>{t.section1Title}</b></p>
           <br />
           <p className="servicosText">
             {t.section1Text1} <br />
@@ -321,7 +321,7 @@ export default function PoliticaDePrivacidade() {
         </div>
 
         <div className="servicosSection">
-          <p className="servicosTitle">{t.section2Title}</p>
+          <p className="servicosTitle"><b>{t.section2Title}</b></p>
           <br />
           <p className="servicosText">
             {t.section2Text1} <br />
@@ -334,7 +334,7 @@ export default function PoliticaDePrivacidade() {
         </div>
 
         <div className="servicosSection">
-          <p className="servicosTitle">{t.section3Title}</p>
+          <p className="servicosTitle"><b>{t.section3Title}</b></p>
           <br />
           <p className="servicosText">
             {t.section3Text1} <br />
@@ -348,7 +348,7 @@ export default function PoliticaDePrivacidade() {
         </div>
 
         <div className="servicosSection">
-          <p className="servicosTitle">{t.section4Title}</p>
+          <p className="servicosTitle"><b>{t.section4Title}</b></p>
           <br />
           <p className="servicosText">
             {t.section4Text1}
@@ -364,7 +364,7 @@ export default function PoliticaDePrivacidade() {
         </div>
 
         <div className="servicosSection">
-          <p className="servicosTitle">{t.section5Title}</p>
+          <p className="servicosTitle"><b>{t.section5Title}</b></p>
           <br />
           <p className="servicosText">
             {t.section5Text1}
@@ -390,7 +390,7 @@ export default function PoliticaDePrivacidade() {
         </div>
 
         <div className="servicosSection">
-          <p className="servicosTitle">{t.section6Title}</p>
+          <p className="servicosTitle"><b>{t.section6Title}</b></p>
           <br />
           <p className="servicosText">
             {t.section6Text1}
@@ -402,7 +402,7 @@ export default function PoliticaDePrivacidade() {
         </div>
 
         <div className="servicosSection">
-          <p className="servicosTitle">{t.section7Title}</p>
+          <p className="servicosTitle"><b>{t.section7Title}</b></p>
           <br />
           <p className="servicosText">
             {t.section7Text1}
@@ -412,13 +412,13 @@ export default function PoliticaDePrivacidade() {
         </div>
 
         <div className="servicosSection">
-          <p className="servicosTitle">{t.section8Title}</p>
+          <p className="servicosTitle"><b>{t.section8Title}</b></p>
           <br />
           <p className="servicosText">{t.section8Text1}</p>
         </div>
 
         <div className="servicosSection">
-          <p className="servicosTitle">{t.section9Title}</p>
+          <p className="servicosTitle"><b>{t.section9Title}</b></p>
           <br />
           <p className="servicosText">
             {t.section9Text1}
@@ -430,13 +430,13 @@ export default function PoliticaDePrivacidade() {
         </div>
 
         <div className="servicosSection">
-          <p className="servicosTitle">{t.section10Title}</p>
+          <p className="servicosTitle"><b>{t.section10Title}</b></p>
           <br />
           <p className="servicosText">{t.section10Text1}</p>
         </div>
 
         <div className="servicosSection">
-          <p className="servicosTitle">{t.section11Title}</p>
+          <p className="servicosTitle"><b>{t.section11Title}</b></p>
           <br />
           <p className="servicosText">
             {t.section11Text1}
@@ -447,7 +447,7 @@ export default function PoliticaDePrivacidade() {
         </div>
 
         <div className="servicosSection">
-          <p className="servicosTitle">{t.section12Title}</p>
+          <p className="servicosTitle"><b>{t.section12Title}</b></p>
           <br />
           <p className="servicosText">{t.section12Text1}</p>
         </div>

@@ -1,4 +1,4 @@
-.navegueMain{
+.navegueMainContainer{
     gap: 20px;
     width: 80%;
     display: flex;
@@ -7,17 +7,17 @@
     align-items: flex-start;
     height: auto;
 
-    & .navegueTitle{
+    & .navegueTit{
         font-weight: 400;
         font-size: 27px;
         color: #21a2bf;
     }
-    & ul{
+    & .navegueList{
         display: flex;
         flex-direction: column;
         gap: 10px;
         color: red;
-        & li{
+        & .navegueListItem{
             cursor: pointer;
             position: relative;
             left: 4rem;

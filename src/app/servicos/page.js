@@ -10,8 +10,9 @@ import { useLanguage } from "../../context/LanguageContext";
 const translations = {
   pt: {
     title1: "Importação e Exportação",
-    title2: "Assessoria Gestão da logística",
+    title2: "Assessoria",
     title3: "Despacho Aduaneiro",
+    title4: "Gestão da Logística",
     subtitle1: "Prestamos serviços para todas as empresas que queiram vender seus produtos em outros mercados.",
     text1_1: "Abrange desde a identificação do cliente, negociação, preparação dos documentos, contratação do frete internacional (porto a porto ou porta a porta) e, administração de todas as etapas para os despachos aduaneiros, do carregamento na origem da carga até a entrega ao importador.",
     text1_2: "Trabalhamos com as modalidades de exportação aérea e marítima, tanto na categoria consolidada, quando no preenchimento de contêineres de 20 pés e 40 pés.",
@@ -36,8 +37,9 @@ const translations = {
   },
   en: {
     title1: "Import and Export",
-    title2: "Logistics Management Consulting",
+    title2: "Advisory",
     title3: "Customs Clearance",
+    title4: "Logistics Management",
     subtitle1: "We provide services for all companies that want to sell their products in other markets.",
     text1_1: "Our services cover client identification, negotiation, document preparation, international freight contracting (port-to-port or door-to-door), and the administration of all stages for customs clearance, from loading at the cargo's origin to delivery to the importer.",
     text1_2: "We work with air and sea export modalities, both in the consolidated category and in filling 20-foot and 40-foot containers.",
@@ -70,17 +72,14 @@ export default function Servicos() {
     <div>
       <Navbar />
       <div className="servicosMain">
-        <div className="servicosTitleMain">
-          <p>{t.title1}</p>
-          <p>{t.title2}</p>
-          <p>{t.title3}</p>
-        </div>
         <div className="servicosSection">
           <p className="servicosTitle">
-            {t.subtitle1}
+            <p>{t.title2}</p>
           </p>
           <br />
           <p className="servicosText">
+            {t.subtitle1}
+            <br />
             {t.text1_1} <br />
             <br /> {t.text1_2}
             <br />
@@ -92,10 +91,12 @@ export default function Servicos() {
 
         <div className="servicosSection">
           <p className="servicosTitle">
-            {t.subtitle2}
+            <p>{t.title1}</p>
           </p>
           <br />
           <p className="servicosText">
+            {t.subtitle2}
+            <br />
             {t.text2_1} <br />
             <br /> {t.text2_2}
             <br />
@@ -105,10 +106,12 @@ export default function Servicos() {
 
         <div className="servicosSection">
           <p className="servicosTitle">
-            {t.subtitle3}
+            <p>{t.title4}</p>
           </p>
           <br />
           <p className="servicosText">
+            {t.subtitle3}
+            <br />
             {t.text3_1} <br />
             <br /> {t.text3_2}
             <br />
@@ -124,10 +127,12 @@ export default function Servicos() {
 
         <div className="servicosSection">
           <p className="servicosTitle">
-            {t.subtitle4}
+            {t.title3}
           </p>
           <br />
           <p className="servicosText">
+            {t.subtitle3}
+            <br />
             {t.text4_1}
             <br />
             <br />{t.text4_2}

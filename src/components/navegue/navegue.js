@@ -28,22 +28,22 @@ export default function Navegue() {
   const { locale } = useLanguage();
   const t = translations[locale];
   return (
-    <div className="navegueMain">
-      <h1 className="navegueTitle">{t.navegue}</h1>
-      <ul>
-        <li>
+    <div className="navegueMainContainer">
+      <h1 className="navegueTit">{t.navegue}</h1>
+      <ul className="navegueList">
+        <li className="navegueListItem">
           <a href="/nossaEmpresa">{t.empressa}</a>
         </li>
-        <li>
+        <li className="navegueListItem">
           <a href="/servicos">{t.servico}</a>
         </li>
-        <li>
+        <li className="navegueListItem">
           <a href="/informacoes">{t.informacao}</a>
         </li>
-        <li>
+        <li className="navegueListItem">
           <a href="/contato">{t.contato}</a>
         </li>
-        <li>
+        <li className="navegueListItem">
           <a href="/politica">{t.politica}</a>
         </li>
       </ul>

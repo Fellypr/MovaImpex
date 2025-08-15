@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Navegue from "@/components/navegue/navegue";
 import Footer from "@/components/footer/footer";
 import { useLanguage } from "../context/LanguageContext";
+import Link from "next/link";
 const translations = {
   pt: {
     // Títulos e frases de destaque
@@ -52,8 +53,10 @@ const translations = {
     address:
       "Endereço",
     navegue :"Navegue",
+    buttonBanner :"Saiba Mais",
   },
   en: {
+    buttonBanner :"Learn More",
     navegue: "Browse",
     contato: "Contact us",
     email: "Email",
@@ -112,6 +115,7 @@ export default function Home() {
           <div className="bannerText">
             <p className="bannerText1">{t.greeting}</p>
             <p className="bannerText2">{t.description}</p>
+            <Link href="/servicos"><button className="bannerButton">{t.buttonBanner}</button></Link>
           </div>
         </div>
       </div>
@@ -168,12 +172,13 @@ export default function Home() {
               </div>
             </div>
 
-            <a href="/servicos">
+            
+          </div>
+          <a href="/servicos" className="linkbutton">
               <button className="buttonHome">
                 <p style={{ color: "#ffffffff" }}>{t.learnMore}</p>
               </button>
             </a>
-          </div>
         </div>
       </div>
 

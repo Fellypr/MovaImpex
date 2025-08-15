@@ -11,21 +11,27 @@ const translations = {
   pt: {
     // Seção Principal
     aboutTitle: "A Mova Impex",
-    aboutText: "É uma empresa que atua no ramo da importação e principalmente na exportação, tanto direta como indireta. Nosso principal objetivo é ajudar os nossos clientes com todas as etapas em relação a importação e exportação.",
+    aboutText:
+      "É uma empresa que atua no ramo da importação e principalmente na exportação, tanto direta como indireta. Nosso principal objetivo é ajudar os nossos clientes com todas as etapas em relação a importação e exportação.",
 
     // Missão
     missionTitle: "Missão",
-    missionText1: "Atuar nas operações de Comércio Exterior, principalmente na importação e exportação de produtos Asiáticos, Brasileiros e Sul Americanos.",
-    missionText2: "Estamos sempre em busca de novos fornecedores e clientes. Reunimos todos os players necessários ao processo de logística completo das mercadorias até a entrega ao destino final.",
+    missionText1:
+      "Atuar nas operações de Comércio Exterior, principalmente na importação e exportação de produtos Asiáticos, Brasileiros e Sul Americanos.",
+    missionText2:
+      "Estamos sempre em busca de novos fornecedores e clientes. Reunimos todos os players necessários ao processo de logística completo das mercadorias até a entrega ao destino final.",
 
     // Valores
     valuesTitle: "Valores",
-    valuesText1: "Garantimos sempre a melhor qualidade em nossos serviços, atendendo nossos clientes da melhor forma possível.",
-    valuesText2: "Acreditamos que o crescimento e solidez é construído através de transparência e honestidade, para ter um relacionamento duradouro com nossos clientes respeitando sempre esses valores.",
+    valuesText1:
+      "Garantimos sempre a melhor qualidade em nossos serviços, atendendo nossos clientes da melhor forma possível.",
+    valuesText2:
+      "Acreditamos que o crescimento e solidez é construído através de transparência e honestidade, para ter um relacionamento duradouro com nossos clientes respeitando sempre esses valores.",
 
     // Visão
     visionTitle: "Visão",
-    visionText: "Desejamos expandir nossos negócios até atingir o mercado mundial, sempre prezando pela excelência em nossos serviços, para assim, nos tornarmos referência global.",
+    visionText:
+      "Desejamos expandir nossos negócios até atingir o mercado mundial, sempre prezando pela excelência em nossos serviços, para assim, nos tornarmos referência global.",
 
     // Produtos
     productsTitle: "Produtos que trabalhamos",
@@ -40,21 +46,27 @@ const translations = {
   en: {
     // Main Section
     aboutTitle: "About Mova Impex",
-    aboutText: "Mova Impex is a company that operates in the import and, especially, export sectors, both direct and indirect. Our main objective is to assist our clients with all stages related to import and export.",
+    aboutText:
+      "Mova Impex is a company that operates in the import and, especially, export sectors, both direct and indirect. Our main objective is to assist our clients with all stages related to import and export.",
 
     // Mission
     missionTitle: "Mission",
-    missionText1: "To operate in Foreign Trade operations, mainly in the import and export of Asian, Brazilian, and South American products.",
-    missionText2: "We are always looking for new suppliers and clients. We bring together all the necessary players for the complete logistics process of goods until delivery to the final destination.",
+    missionText1:
+      "To operate in Foreign Trade operations, mainly in the import and export of Asian, Brazilian, and South American products.",
+    missionText2:
+      "We are always looking for new suppliers and clients. We bring together all the necessary players for the complete logistics process of goods until delivery to the final destination.",
 
     // Values
     valuesTitle: "Values",
-    valuesText1: "We always guarantee the best quality in our services, serving our clients in the best possible way.",
-    valuesText2: "We believe that growth and solidity are built through transparency and honesty, to have a long-lasting relationship with our clients, always respecting these values.",
+    valuesText1:
+      "We always guarantee the best quality in our services, serving our clients in the best possible way.",
+    valuesText2:
+      "We believe that growth and solidity are built through transparency and honesty, to have a long-lasting relationship with our clients, always respecting these values.",
 
     // Vision
     visionTitle: "Vision",
-    visionText: "We wish to expand our business to reach the global market, always striving for excellence in our services, to become a global reference.",
+    visionText:
+      "We wish to expand our business to reach the global market, always striving for excellence in our services, to become a global reference.",
 
     // Products
     productsTitle: "Products we work with",
@@ -75,52 +87,49 @@ export default function NossaEmpresa() {
   return (
     <main className="nossaEmpresaMain">
       <Navbar />
-
-      <div className="nossaEmpresaSection">
-        <img
-          src="/img/Design-sem-nome-1-1-768x768.png"
-          alt="Banner"
-          className="nossaEmpresaImg"
-        />
-        <div className="nossaEmpresaText">
-          <p className="nossaEmpresaText1">{t.aboutTitle}</p>
-          <p className="nossaEmpresaText2">
-            {t.aboutText}
-          </p>
+      <div className="nossaEmpresaContainer">
+        <div className="nossaEmpresaSection">
+          <img
+            src="/img/Design-sem-nome-1-1-768x768.png"
+            alt="Banner"
+            className="nossaEmpresaImg"
+          />
+          <div className="nossaEmpresaText">
+            <p className="nossaEmpresaText1">{t.aboutTitle}</p>
+            <p className="nossaEmpresaText2">{t.aboutText}</p>
+          </div>
         </div>
-      </div>
 
-      <div className="nossaEmpresaSection">
-        <img src="/img/target.png" alt="Banner" className="badge" />
-        <div className="nossaEmpresaText">
-          <p className="nossaEmpresaText1">{t.missionTitle}</p>
-          <p className="nossaEmpresaText2">
-            {t.missionText1}
-            <br />
-            <br /> {t.missionText2}
-          </p>
+        <div className="nossaEmpresaSection">
+          <img src="/img/target.png" alt="Banner" className="badge" />
+          <div className="nossaEmpresaText">
+            <p className="nossaEmpresaText1">{t.missionTitle}</p>
+            <p className="nossaEmpresaText2">
+              {t.missionText1}
+              <br />
+              <br /> {t.missionText2}
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div className="nossaEmpresaSection">
-        <img src="/img/badge.png" alt="Banner" className="badge" />
-        <div className="nossaEmpresaText">
-          <p className="nossaEmpresaText1">{t.valuesTitle}</p>
-          <p className="nossaEmpresaText2">
-            {t.valuesText1}
-            <br />
-            <br /> {t.valuesText2}
-          </p>
+        <div className="nossaEmpresaSection">
+          <img src="/img/badge.png" alt="Banner" className="badge" />
+          <div className="nossaEmpresaText">
+            <p className="nossaEmpresaText1">{t.valuesTitle}</p>
+            <p className="nossaEmpresaText2">
+              {t.valuesText1}
+              <br />
+              <br /> {t.valuesText2}
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div className="nossaEmpresaSection">
-        <img src="/img/vision.png" alt="Banner" className="badge" />
-        <div className="nossaEmpresaText">
-          <p className="nossaEmpresaText1">{t.visionTitle}</p>
-          <p className="nossaEmpresaText2">
-            {t.visionText}
-          </p>
+        <div className="nossaEmpresaSection">
+          <img src="/img/vision.png" alt="Banner" className="badge" />
+          <div className="nossaEmpresaText">
+            <p className="nossaEmpresaText1">{t.visionTitle}</p>
+            <p className="nossaEmpresaText2">{t.visionText}</p>
+          </div>
         </div>
       </div>
 

@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+}
+p {
   color: #5e5e5e;
 }
 
@@ -65,7 +67,25 @@ a {
       & .bannerText2 {
         font-weight: normal;
         text-align: center;
-        font-size: 17px;
+        font-size: 19px;
+        color: white;
+      }
+      & .bannerButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 40px;
+        border-radius: 12px;
+        border: none;
+        background-color: #0004ff;
+        color: white;
+      }
+      & .bannerButton:hover {
+        background-color: #fdfdfd;
+        color: black;
+        cursor: pointer;
+       
       }
     }
   }
@@ -136,6 +156,7 @@ a {
             font-weight: 500;
             font-size: 23px;
             color: #21a2bf;
+            text-align: center;
           }
           & .TextContainerText {
             font-weight: normal;
@@ -144,23 +165,22 @@ a {
           }
         }
       }
-
-      & a {
+    }
+    & .linkbutton {
+      background-color: #1ba3c0;
+      & button {
+        width: 450px;
+        height: 40px;
+        border-radius: 7px;
+        background-color: #21a2bf;
+        color: white;
+        font-size: 1.2rem;
+        border: none;
+      }
+      & button:hover {
         background-color: #1ba3c0;
-        & button {
-          width: 450px;
-          height: 40px;
-          border-radius: 7px;
-          background-color: #21a2bf;
-          color: white;
-          font-size: 1.2rem;
-          border: none;
-        }
-        & button:hover {
-          background-color: #1ba3c0;
-          cursor: pointer;
-          scale: 1.1;
-        }
+        cursor: pointer;
+        scale: 1.1;
       }
     }
   }
@@ -176,7 +196,7 @@ a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.whereWeAreMain{
+.whereWeAreMain {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,6 +213,7 @@ a {
   height: auto;
   padding: 10px;
   gap: 20px;
+
 
   & .mapaContainer {
     display: flex;
@@ -212,7 +233,6 @@ a {
     font-size: 27px;
     gap: 10px;
     color: #1ba3c0;
-    
   }
 }
 
@@ -319,7 +339,7 @@ a {
     & .banner {
       display: flex;
       justify-content: end;
-      align-items: center;
+      align-items: flex-start;
       width: 100%;
       gap: 10px;
       padding: 0px 0px 0px 0px;
@@ -343,7 +363,7 @@ a {
         height: 330px;
         text-align: left;
         padding: 10px;
-        gap: 0px !important;
+        gap: 14px !important;
         font-family: "Segoe UI", sans-serif;
         background-color: rgba(1, 120, 255, 0);
         backdrop-filter: blur(3px);
@@ -360,9 +380,26 @@ a {
           font-weight: bold;
           text-align: center;
           font-size: 12px;
-          color: #1ba3c0;
         }
+        & .bannerButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 30px;
+        border-radius: 12px;
+        border: none;
+        background-color: #0004ff;
+        color: white;
       }
+      & .bannerButton:hover {
+        background-color: #fdfdfd;
+        color: black;
+        cursor: pointer;
+       
+      }
+      }
+
     }
   }
   .cardsMain {
@@ -373,75 +410,74 @@ a {
     padding: 0px;
   }
   & .Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 87%;
+    height: auto;
+    gap: 30px;
+    padding: 20px;
+
+    & .CardHome {
+      background-color: rgb(247, 247, 247);
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
-      width: 87%;
-      height: auto;
-      gap: 30px;
-      padding: 20px;
+      flex-direction: column;
+      width: 500px;
+      height: 320px;
+      gap: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
 
-      & .CardHome {
-        background-color: rgb(247, 247, 247);
+      & .TextContainer {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 500px;
-        height: 320px;
-        gap: 20px;
-        border-radius: 12px;
-        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
-
-        & .TextContainer {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-          width: 90%;
-          height: auto;
-          gap: 14px;
-          & .TextContainerTitle {
-            font-weight: 500;
-            font-size: 23px;
-            color: #21a2bf;
-          }
-          & .TextContainerText {
-            font-weight: normal;
-            font-size: 14px;
-            color: rgb(94, 94, 94);
-          }
+        width: 90%;
+        height: auto;
+        gap: 14px;
+        & .TextContainerTitle {
+          font-weight: 500;
+          font-size: 23px;
+          color: #21a2bf;
         }
-      }
-
-      & a {
-        background-color: #1ba3c0;
-        & button {
-          width: 250px !important;
-          height: 40px;
-          border-radius: 7px;
-          background-color: #21a2bf;
-          color: white;
-          font-size: 0.8rem !important;
-          border: none;
-        }
-        & button:hover {
-          background-color: #1ba3c0;
-          cursor: pointer;
-          scale: 1.1;
+        & .TextContainerText {
+          font-weight: normal;
+          font-size: 14px;
+          color: rgb(94, 94, 94);
         }
       }
     }
+  }
+  & .linkbutton {
+    background-color: #1ba3c0;
+    & button {
+      width: 250px !important;
+      height: 40px;
+      border-radius: 7px;
+      background-color: #21a2bf;
+      color: white;
+      font-size: 0.8rem !important;
+      border: none;
+    }
+    & button:hover {
+      background-color: #1ba3c0;
+      cursor: pointer;
+      scale: 1.1;
+    }
+  }
 }
 
 @media screen and (max-width: 425px) {
   .bannerMain {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: auto;
     & .banner {
       display: flex;
@@ -479,15 +515,35 @@ a {
           display: flex;
           justify-content: center;
           align-items: center;
+          text-align: center;
           height: 200px;
           color: white;
         }
         & .bannerText2 {
           font-weight: bold;
-          text-align: left;
+          text-align: center;
           font-size: 9px;
-          color: #1ba3c0;
         }
+
+        & .bannerButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 30px;
+        border-radius: 12px;
+        border: none;
+        background-color: #0004ff;
+        color: white;
+        margin-top: 2rem;
+        font-size: 10px;
+      }
+      & .bannerButton:hover {
+        background-color: #fdfdfd;
+        color: black;
+        cursor: pointer;
+       
+      }
       }
     }
   }
@@ -589,8 +645,7 @@ a {
   }
 }
 
-
-.ContatoPageMain{
+.ContatoPageMain {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -598,7 +653,7 @@ a {
   padding: 10px;
   width: 80%;
 }
-.ContatoPage{
+.ContatoPage {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -607,24 +662,23 @@ a {
   padding: 10px;
   margin-top: 2rem;
   gap: 15px;
-    & ul{
-      position: relative;
-      left: 4rem;
-    }
+  & ul {
+    position: relative;
+    left: 4rem;
+  }
 }
-.ContatoPageTitle{
+.ContatoPageTitle {
   font-weight: 500;
   font-size: 28px;
   color: #21a2bf;
 }
-.ContatoPageText{
+.ContatoPageText {
   font-weight: normal;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.678);
 }
 
-
-.NavegueMainPage{
+.NavegueMainPage {
   display: flex;
   justify-content: center;
   align-items: center;

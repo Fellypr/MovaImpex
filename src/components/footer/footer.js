@@ -14,7 +14,6 @@ const translations = {
     privacyPolicy: "Políticas de Privacidade",
     contact: "Contato",
     ourCompany: "Nossa Empresa",
-    locationTitle: "Onde Estamos",
     copyright: "© Todos os direitos reservados | Mova Impex",
   },
   en: {
@@ -24,7 +23,6 @@ const translations = {
     privacyPolicy: "Privacy Policy",
     contact: "Contact",
     ourCompany: "Our Company",
-    locationTitle: "Where We Are",
     copyright: "© All rights reserved | Mova Impex",
   },
 };
@@ -60,20 +58,6 @@ export default function Footer() {
           <a href="/contato">{t.contact}</a>
           <a href="/nossaEmpresa">{t.ourCompany}</a>
         </div>
-      </div>
-
-      {/* Mapa menor abaixo de "Onde estamos" */}
-      <div className="mapaFooter">
-        <p className="mapaTitle">{t.locationTitle}</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.312752922606!2d-47.354208225406126!3d-22.753771832418977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89bd854865baf%3A0xf6b36cd929c692ee!2sAmerican%20Square%20-%20Torre%20New%20York!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
-          width="200"
-          height="200"
-          style={{ border: 0, borderRadius: "8px" }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
       </div>
 
       <p className="copyright">

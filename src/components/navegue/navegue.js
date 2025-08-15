@@ -1,17 +1,52 @@
+"use client";
+
 import "./navegue.css";
+import { useLanguage } from "../../context/LanguageContext";
+
+const translations = {
+  pt: {
+    navegue: "Navegue",
+    home: "Home",
+    empressa: "Nossa Empresa",
+    servico: "Serviços",
+    contato: "Contato",
+    informacao: "Informações",
+    politica: "Políticas de Privacidade",
+  },
+  en: {
+    politica: "Privacy Policy",
+    navegue: "Browse",
+    home: "Home",
+    empressa: "Our Company",
+    servico: "Services",
+    contato: "Contact",
+    informacao: "Information",
+  },
+};
 
 export default function Navegue() {
-    return (
-        <div className="navegueMain">
-            <h1 className="navegueTitle">Navegue</h1>
-            <ul>
-                <li><a href="/servicos">Home</a></li>
-                <li><a href="/empresa">NossaEmpresa</a></li>
-                <li><a href="/informacoes">Serviços</a></li>
-                <li><a href="/informacoes">Informacões</a></li>
-                <li><a href="/informacoes">Políticas de Privacidade</a></li>
-                <li><a href="/informacoes">Contato</a></li>
-            </ul>
-        </div>
-    );
+  const { locale } = useLanguage();
+  const t = translations[locale];
+  return (
+    <div className="navegueMain">
+      <h1 className="navegueTitle">{t.navegue}</h1>
+      <ul>
+        <li>
+          <a href="/servicos">{t.home}</a>
+        </li>
+        <li>
+          <a href="/empresa">{t.empressa}</a>
+        </li>
+        <li>
+          <a href="/informacoes">{t.servico}</a>
+        </li>
+        <li>
+          <a href="/informacoes">{t.contato}</a>
+        </li>
+        <li>
+          <a href="/politica">{t.politica}</a>
+        </li>
+      </ul>
+    </div>
+  );
 }

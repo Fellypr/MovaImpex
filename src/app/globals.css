@@ -176,20 +176,31 @@ a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.mapa {
+.whereWeAreMain{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
+  padding: 10px;
+  font-family: "Segoe UI", sans-serif;
+}
+.mapa {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
-  width: 100%;
-  height: 90vh;
+  width: 80%;
+  height: auto;
+  padding: 10px;
   gap: 20px;
 
   & .mapaContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 90%;
+    align-items: flex-start;
+    width: 200px;
+    position: relative;
+    left: 2rem;
   }
   & .mapaTitle {
     display: flex;
@@ -198,16 +209,10 @@ a {
     width: 90%;
     height: auto;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 27px;
     gap: 10px;
-    & .listraText {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 10px;
-      height: 50px;
-      background-color: #1ba3c0;
-    }
+    color: #1ba3c0;
+    
   }
 }
 
@@ -367,6 +372,69 @@ a {
     height: auto;
     padding: 0px;
   }
+  & .Container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 87%;
+      height: auto;
+      gap: 30px;
+      padding: 20px;
+
+      & .CardHome {
+        background-color: rgb(247, 247, 247);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 500px;
+        height: 320px;
+        gap: 20px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+
+        & .TextContainer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 90%;
+          height: auto;
+          gap: 14px;
+          & .TextContainerTitle {
+            font-weight: 500;
+            font-size: 23px;
+            color: #21a2bf;
+          }
+          & .TextContainerText {
+            font-weight: normal;
+            font-size: 14px;
+            color: rgb(94, 94, 94);
+          }
+        }
+      }
+
+      & a {
+        background-color: #1ba3c0;
+        & button {
+          width: 250px !important;
+          height: 40px;
+          border-radius: 7px;
+          background-color: #21a2bf;
+          color: white;
+          font-size: 0.8rem !important;
+          border: none;
+        }
+        & button:hover {
+          background-color: #1ba3c0;
+          cursor: pointer;
+          scale: 1.1;
+        }
+      }
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -519,4 +587,48 @@ a {
       }
     }
   }
+}
+
+
+.ContatoPageMain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 10px;
+  width: 80%;
+}
+.ContatoPage{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: auto;
+  padding: 10px;
+  margin-top: 2rem;
+  gap: 15px;
+    & ul{
+      position: relative;
+      left: 4rem;
+    }
+}
+.ContatoPageTitle{
+  font-weight: 500;
+  font-size: 28px;
+  color: #21a2bf;
+}
+.ContatoPageText{
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.678);
+}
+
+
+.NavegueMainPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 10px;
+  width: 100%;
 }

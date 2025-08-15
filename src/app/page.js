@@ -1,7 +1,7 @@
 "use client";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
-import Card from "@/components/card/card";
+import Navegue from "@/components/navegue/navegue";
 import Footer from "@/components/footer/footer";
 import { useLanguage } from "../context/LanguageContext";
 const translations = {
@@ -45,8 +45,20 @@ const translations = {
     email: "contato@movaimpex.com.br",
     address:
       "Avenida Brasil, 1500 Ed. New York – Sala 207, Vila Frezzarim, Americana – SP, 13465-785 – Brasil",
+    locationTitle: "Onde Estamos",
+    contato: "Contato",
+    email: "Email",
+    phone: "Telefone",
+    address:
+      "Endereço",
+    navegue :"Navegue",
   },
   en: {
+    navegue: "Browse",
+    contato: "Contact us",
+    email: "Email",
+    phone: "Phone",
+    address:"Address",
     // Títulos e frases de destaque
     greeting: "Foreign trade",
     description: "Attention to every detail is the basis of excellent work!",
@@ -81,10 +93,7 @@ const translations = {
     aboutUs: "About Us",
     whereWeAre: "Where We Are",
     footerText: "© All rights reserved | Mova Impex",
-    phone: "(19) 3013-4040",
-    email: "contato@movaimpex.com.br",
-    address:
-      "Avenida Brasil, 1500 Ed. New York – Sala 207, Vila Frezzarim, Americana – SP, 13465-785 – Brazil",
+    locationTitle: "Where We Are",
   },
 };
 
@@ -168,6 +177,35 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="NavegueMainPage">
+        <Navegue />
+      </div>
+
+      <div className="ContatoPageMain">
+        <div className="ContatoPage">
+          <h1 className="ContatoPageTitle">{t.contato}</h1>
+          <ul>
+            <li className="ContatoPageText">{t.phone}:(19) 3013-4040</li>
+            <li className="ContatoPageText">{t.email}: contato@movaimpex.com.br</li>
+            <li className="ContatoPageText">{t.address}: Avenida Brasil, 1500 Ed. New York – Sala 207, Vila Frezzarim, Americana – SP, 13465-785 – Brasil</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div className="whereWeAreMain">
+        <div className="mapa">
+          <p className="mapaTitle">{t.locationTitle}</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.312752922606!2d-47.354208225406126!3d-22.753771832418977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89bd854865baf%3A0xf6b36cd929c692ee!2sAmerican%20Square%20-%20Torre%20New%20York!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+            style={{ border: 0, borderRadius: "8px" }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="mapaContainer"
+          ></iframe>
+        </div>
+      </div>
       <div className="footerMain">
         <Footer />
       </div>

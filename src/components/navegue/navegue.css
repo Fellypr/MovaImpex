@@ -1,22 +1,29 @@
 .navegueMain{
     gap: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
 
     & .navegueTitle{
         font-weight: 400;
-        font-size: 38px;
+        font-size: 27px;
+        color: #21a2bf;
     }
     & ul{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        list-style: none;
-        text-decoration: underline;
+        flex-direction: column;
+        gap: 10px;
         color: red;
         & li{
             cursor: pointer;
+            position: relative;
+            left: 4rem;
             & a{
-                text-decoration: none;
+                font-size: 18px;
+                text-decoration: underline;
                 color: rgb(245, 0, 0);
             }
         }

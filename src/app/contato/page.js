@@ -1,3 +1,5 @@
+"use client";
+
 import "./contato.css";
 import "../../components/navbar/Navbar.css";
 import Navbar from "@/components/navbar/Navbar";
@@ -6,59 +8,35 @@ import { TfiEmail } from "react-icons/tfi";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAccessTime } from "react-icons/md";
 import Footer from "@/components/footer/footer";
+import { useLanguage } from "../../context/LanguageContext";
 
-import Link from "next/link";
+const translations = {
+  pt: {
+    contactTitle: "Fale Conosco",
+    address: "Avenida Brasil, 1500 Ed. New York – Sala 207, Vila Frezzarim, Americana – SP, 13465-785 – Brasil",
+    openingHours: "Segunda à Quinta-feira: 9h às 18h",
+    openingHoursFriday: "Sexta-feira: até as 17h",
+    locationTitle: "Onde Estamos Localizados",
+  },
+  en: {
+    contactTitle: "Contact Us",
+    address: "Avenida Brasil, 1500 Ed. New York – Sala 207, Vila Frezzarim, Americana – SP, 13465-785 – Brazil",
+    openingHours: "Monday to Thursday: 9am to 6pm",
+    openingHoursFriday: "Friday: until 5pm",
+    locationTitle: "Where We Are Located",
+  },
+};
 
 export default function Contato() {
+  const { locale } = useLanguage();
+  const t = translations[locale];
+
   return (
     <>
-      <div className="NavBarMain">
-            <Link href="/">
-              <img
-                src="/img/Logo/Mova-Impex-PNG-2-1-1.png"
-                className="custom-logoEnteredLazyloaded"
-                alt="Mova Impex"
-                decoding="async"
-                loading="lazy"
-              />
-            </Link>
-            <div className="titleNav">
-              <h2 className="titleHome">
-                <Link href="/">Home</Link>
-              </h2>
-              <h2 className="titleHome">
-                <Link href="/nossaEmpresa">Nossa Empresa</Link>
-              </h2>
-              <h2 className="titleHome">
-                <Link href="/servicos"> Serviços</Link>
-              </h2>
-              <h2 className="titleHome">
-                <Link href="/informacoes">Informações</Link>
-              </h2>
-              <h2 className="titleHome"  >
-                <Link href="/contato" style={{ color: "#21A2BF" }}>Contato</Link>
-              </h2>
-            </div>
-            <div className="languagens">
-              <img
-                decoding="async"
-                src="/img/Logo/bandeiras/united-states-2.png"
-                alt="Bandeira EUA"
-                loading="lazy"
-                className="Bandeira"
-              />
-              <img
-                decoding="async"
-                src="/img/Logo/bandeiras/brazil-1.png"
-                alt="Bandeira Brasil"
-                loading="lazy"
-                className="Bandeira"
-              />
-            </div>
-          </div>
+      <Navbar />
       <div className="contatoMain">
         <div className="contatoSection">
-          <h1 className="contatoTitle">Fale Conosco</h1>
+          <h1 className="contatoTitle">{t.contactTitle}</h1>
 
           <div className="contatoContainer">
             <div className="contatoItem">
@@ -73,17 +51,14 @@ export default function Contato() {
 
             <div className="contatoItem">
               <FaLocationDot className="contatoIcon" />
-              <p>
-                Avenida Brasil, 1500 Ed. New York – Sala 207, Vila Frezzarim,
-                Americana – SP, 13465-785 – Brasil
-              </p>
+              <p>{t.address}</p>
             </div>
 
             <div className="contatoItem">
               <MdAccessTime className="contatoIcon" />
               <p>
-                Segunda à Quinta-feira: 9h às 18h <br />
-                Sexta-feira: até as 17h
+                {t.openingHours} <br />
+                {t.openingHoursFriday}
               </p>
             </div>
           </div>
@@ -92,7 +67,7 @@ export default function Contato() {
             <div className="mapaTitle">
               <div className="listraText"></div>
               <p style={{ fontSize: "28px", fontWeight: "medium" }}>
-                Onde Estamos Localizados
+                {t.locationTitle}
               </p>
             </div>
             <iframe

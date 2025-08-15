@@ -1,56 +1,81 @@
+"use client";
+
+import React from "react";
 import "./nossaEmpresa.css";
 import "../../components/navbar/Navbar.css";
-import Link from "next/link";
 import Footer from "@/components/footer/footer";
+import Navbar from "@/components/navbar/Navbar";
+import { useLanguage } from "../../context/LanguageContext";
+
+const translations = {
+  pt: {
+    // Seção Principal
+    aboutTitle: "A Mova Impex",
+    aboutText: "É uma empresa que atua no ramo da importação e principalmente na exportação, tanto direta como indireta. Nosso principal objetivo é ajudar os nossos clientes com todas as etapas em relação a importação e exportação.",
+
+    // Missão
+    missionTitle: "Missão",
+    missionText1: "Atuar nas operações de Comércio Exterior, principalmente na importação e exportação de produtos Asiáticos, Brasileiros e Sul Americanos.",
+    missionText2: "Estamos sempre em busca de novos fornecedores e clientes. Reunimos todos os players necessários ao processo de logística completo das mercadorias até a entrega ao destino final.",
+
+    // Valores
+    valuesTitle: "Valores",
+    valuesText1: "Garantimos sempre a melhor qualidade em nossos serviços, atendendo nossos clientes da melhor forma possível.",
+    valuesText2: "Acreditamos que o crescimento e solidez é construído através de transparência e honestidade, para ter um relacionamento duradouro com nossos clientes respeitando sempre esses valores.",
+
+    // Visão
+    visionTitle: "Visão",
+    visionText: "Desejamos expandir nossos negócios até atingir o mercado mundial, sempre prezando pela excelência em nossos serviços, para assim, nos tornarmos referência global.",
+
+    // Produtos
+    productsTitle: "Produtos que trabalhamos",
+    product1: "Produtos não perecíveis",
+    product2: "Produtos perecíveis",
+    product3: "Limpeza e higiene",
+    product4: "Commodities",
+    product5: "Equipamentos",
+    product6: "Utilidades domésticas",
+    product7: "Jogos e brinquedos",
+  },
+  en: {
+    // Main Section
+    aboutTitle: "About Mova Impex",
+    aboutText: "Mova Impex is a company that operates in the import and, especially, export sectors, both direct and indirect. Our main objective is to assist our clients with all stages related to import and export.",
+
+    // Mission
+    missionTitle: "Mission",
+    missionText1: "To operate in Foreign Trade operations, mainly in the import and export of Asian, Brazilian, and South American products.",
+    missionText2: "We are always looking for new suppliers and clients. We bring together all the necessary players for the complete logistics process of goods until delivery to the final destination.",
+
+    // Values
+    valuesTitle: "Values",
+    valuesText1: "We always guarantee the best quality in our services, serving our clients in the best possible way.",
+    valuesText2: "We believe that growth and solidity are built through transparency and honesty, to have a long-lasting relationship with our clients, always respecting these values.",
+
+    // Vision
+    visionTitle: "Vision",
+    visionText: "We wish to expand our business to reach the global market, always striving for excellence in our services, to become a global reference.",
+
+    // Products
+    productsTitle: "Products we work with",
+    product1: "Non-perishable products",
+    product2: "Perishable products",
+    product3: "Cleaning and hygiene",
+    product4: "Commodities",
+    product5: "Equipment",
+    product6: "Household goods",
+    product7: "Games and toys",
+  },
+};
+
 export default function NossaEmpresa() {
+  const { locale } = useLanguage();
+  const t = translations[locale];
+
   return (
     <main className="nossaEmpresaMain">
-      <div className="NavBarMain">
-        <Link href="/">
-          <img
-            src="/img/Logo/Mova-Impex-PNG-2-1-1.png"
-            className="custom-logoEnteredLazyloaded"
-            alt="Mova Impex"
-            decoding="async"
-            loading="lazy"
-          />
-        </Link>
-        <div className="titleNav">
-          <h2 className="titleHome">
-            <Link href="/">Home</Link>
-          </h2>
-          <h2 className="titleHome">
-            <Link href="/nossaEmpresa" style={{ color: "#21A2BF" }}>Nossa Empresa</Link>
-          </h2>
-          <h2 className="titleHome">
-            <Link href="/servicos"> Serviços</Link>
-          </h2>
-          <h2 className="titleHome">
-            <Link href="/informacoes">
-              Informações
-            </Link>
-          </h2>
-          <h2 className="titleHome">
-            <Link href="/contato">Contato</Link>
-          </h2>
-        </div>
-        <div className="languagens">
-          <img
-            decoding="async"
-            src="/img/Logo/bandeiras/united-states-2.png"
-            alt="Bandeira EUA"
-            loading="lazy"
-            className="Bandeira"
-          />
-          <img
-            decoding="async"
-            src="/img/Logo/bandeiras/brazil-1.png"
-            alt="Bandeira Brasil"
-            loading="lazy"
-            className="Bandeira"
-          />
-        </div>
-      </div>
+      <Navbar />
+
       <div className="nossaEmpresaSection">
         <img
           src="/img/Design-sem-nome-1-1-768x768.png"
@@ -58,12 +83,9 @@ export default function NossaEmpresa() {
           className="nossaEmpresaImg"
         />
         <div className="nossaEmpresaText">
-          <p className="nossaEmpresaText1">A Mova Impex</p>
+          <p className="nossaEmpresaText1">{t.aboutTitle}</p>
           <p className="nossaEmpresaText2">
-            É uma empresa que atua no ramo da importação e principalmente na
-            exportação, tanto direta como indireta. Nosso principal objetivo é
-            ajudar os nossos clientes com todas as etapas em relação a
-            importação e exportação.
+            {t.aboutText}
           </p>
         </div>
       </div>
@@ -71,15 +93,11 @@ export default function NossaEmpresa() {
       <div className="nossaEmpresaSection">
         <img src="/img/target.png" alt="Banner" className="badge" />
         <div className="nossaEmpresaText">
-          <p className="nossaEmpresaText1">Missão</p>
+          <p className="nossaEmpresaText1">{t.missionTitle}</p>
           <p className="nossaEmpresaText2">
-            Atuar nas operações de Comércio Exterior, principalmente na
-            importação e exportação de produtos Asiáticos, Brasileiros e Sul
-            Americanos.
+            {t.missionText1}
             <br />
-            <br /> Estamos sempre em busca de novos fornecedores e clientes.
-            Reunimos todos os players necessários ao processo de logística
-            completo das mercadorias até a entrega ao destino final.
+            <br /> {t.missionText2}
           </p>
         </div>
       </div>
@@ -87,14 +105,11 @@ export default function NossaEmpresa() {
       <div className="nossaEmpresaSection">
         <img src="/img/badge.png" alt="Banner" className="badge" />
         <div className="nossaEmpresaText">
-          <p className="nossaEmpresaText1">Valores</p>
+          <p className="nossaEmpresaText1">{t.valuesTitle}</p>
           <p className="nossaEmpresaText2">
-            Garantimos sempre a melhor qualidade em nossos serviços, atendendo
-            nossos clientes da melhor forma possível.
+            {t.valuesText1}
             <br />
-            <br /> Acreditamos que o crescimento e solidez é construído através
-            de transparência e honestidade, para ter um relacionamento duradouro
-            com nossos clientes respeitando sempre esses valores.
+            <br /> {t.valuesText2}
           </p>
         </div>
       </div>
@@ -102,11 +117,9 @@ export default function NossaEmpresa() {
       <div className="nossaEmpresaSection">
         <img src="/img/vision.png" alt="Banner" className="badge" />
         <div className="nossaEmpresaText">
-          <p className="nossaEmpresaText1">Visão</p>
+          <p className="nossaEmpresaText1">{t.visionTitle}</p>
           <p className="nossaEmpresaText2">
-            Desejamos expandir nossos negócios até atingir o mercado mundial,
-            sempre prezando pela excelência em nossos serviços, para assim, nos
-            tornarmos referência global.
+            {t.visionText}
           </p>
         </div>
       </div>
@@ -114,7 +127,7 @@ export default function NossaEmpresa() {
       <div className="nossaEmpresaCardMain">
         <div className="nossaEmpresaTextcard">
           <div className="listraText"></div>
-          <p className="nossaEmpresaCardText2">Produtos que trabalhamos</p>
+          <p className="nossaEmpresaCardText2">{t.productsTitle}</p>
         </div>
         <div className="nossaEmpresaCardSection">
           <div className="nossaEmpresaCard">
@@ -124,7 +137,7 @@ export default function NossaEmpresa() {
               className="nossaEmpresaCardImg"
               width={200}
             />
-            <p className="nossaEmpresaCardText1">Produtos não perecíveis</p>
+            <p className="nossaEmpresaCardText1">{t.product1}</p>
           </div>
 
           <div className="nossaEmpresaCard">
@@ -134,7 +147,7 @@ export default function NossaEmpresa() {
               className="nossaEmpresaCardImg"
               width={200}
             />
-            <p className="nossaEmpresaCardText1">Produtos perecíveis</p>
+            <p className="nossaEmpresaCardText1">{t.product2}</p>
           </div>
 
           <div className="nossaEmpresaCard">
@@ -144,7 +157,7 @@ export default function NossaEmpresa() {
               className="nossaEmpresaCardImg"
               width={200}
             />
-            <p className="nossaEmpresaCardText1">Limpeza e higiene</p>
+            <p className="nossaEmpresaCardText1">{t.product3}</p>
           </div>
 
           <div className="nossaEmpresaCard">
@@ -154,7 +167,7 @@ export default function NossaEmpresa() {
               className="nossaEmpresaCardImg"
               width={200}
             />
-            <p className="nossaEmpresaCardText1">Commodities</p>
+            <p className="nossaEmpresaCardText1">{t.product4}</p>
           </div>
 
           <div className="nossaEmpresaCard">
@@ -164,7 +177,7 @@ export default function NossaEmpresa() {
               className="nossaEmpresaCardImg"
               width={200}
             />
-            <p className="nossaEmpresaCardText1">Equipamentos</p>
+            <p className="nossaEmpresaCardText1">{t.product5}</p>
           </div>
 
           <div className="nossaEmpresaCard">
@@ -174,7 +187,7 @@ export default function NossaEmpresa() {
               className="nossaEmpresaCardImg"
               width={200}
             />
-            <p className="nossaEmpresaCardText1">Utilidades domésticas</p>
+            <p className="nossaEmpresaCardText1">{t.product6}</p>
           </div>
 
           <div className="nossaEmpresaCard">
@@ -184,7 +197,7 @@ export default function NossaEmpresa() {
               className="nossaEmpresaCardImg"
               width={200}
             />
-            <p className="nossaEmpresaCardText1">Jogos e brinquedos</p>
+            <p className="nossaEmpresaCardText1">{t.product7}</p>
           </div>
         </div>
       </div>

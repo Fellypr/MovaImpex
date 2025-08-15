@@ -1,3 +1,4 @@
+import { LanguageProvider } from "../context/LanguageContext";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import CookieConsent from "@/components/CookieConsent";
@@ -18,10 +19,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="pt">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-        <CookieConsent />
+        <LanguageProvider>
+          {children}
+          <CookieConsent />
+        </LanguageProvider>
       </body>
     </html>
   );

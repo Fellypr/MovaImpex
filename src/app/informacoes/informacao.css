@@ -21,7 +21,7 @@
     width: 100%;
     height: auto;
     padding: 10px;
-    flex-wrap: wrap;
+    
     gap: 20px;
     & .informacoesConteudo {
       display: flex;

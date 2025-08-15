@@ -32,16 +32,16 @@ export default function Navegue() {
       <h1 className="navegueTitle">{t.navegue}</h1>
       <ul>
         <li>
-          <a href="/servicos">{t.home}</a>
+          <a href="/nossaEmpresa">{t.empressa}</a>
         </li>
         <li>
-          <a href="/empresa">{t.empressa}</a>
+          <a href="/servicos">{t.servico}</a>
         </li>
         <li>
-          <a href="/informacoes">{t.servico}</a>
+          <a href="/informacoes">{t.informacao}</a>
         </li>
         <li>
-          <a href="/informacoes">{t.contato}</a>
+          <a href="/contato">{t.contato}</a>
         </li>
         <li>
           <a href="/politica">{t.politica}</a>

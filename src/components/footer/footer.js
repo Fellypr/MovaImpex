@@ -18,7 +18,7 @@ const translations = {
     contactTitle: "CONTATO",
     ourCompany: "Nossa Empresa",
     copyright: "© Todos os direitos reservados | Mova Impex",
-    whereWeAre: "Onde Estamos",
+    whereWeAre: "ONDE ESTAMOS",
     navegue: "NAVEGUE",
     home: "Home",
   },
@@ -33,7 +33,7 @@ const translations = {
     contactTitle: "CONTACT",
     ourCompany: "Our Company",
     copyright: "© All rights reserved | Mova Impex",
-    whereWeAre: "Where We Are",
+    whereWeAre: "WHERE WE ARE",
   },
 };
 

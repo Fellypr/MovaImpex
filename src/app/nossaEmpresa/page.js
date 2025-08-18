@@ -45,37 +45,37 @@ const translations = {
   },
   en: {
     // Main Section
-    aboutTitle: "About Mova Impex",
+    aboutTitle: "The Mova Impex",
     aboutText:
-      "Mova Impex is a company that operates in the import and, especially, export sectors, both direct and indirect. Our main objective is to assist our clients with all stages related to import and export.",
+      "It is a company that operates in the field of imports and mainly in exports, both direct and indirect. Our main objective is to help our customers with all steps regarding import and export.",
 
     // Mission
     missionTitle: "Mission",
     missionText1:
-      "To operate in Foreign Trade operations, mainly in the import and export of Asian, Brazilian, and South American products.",
+      "Acting in Foreign Trade operations, mainly in the import and export of Asian, Brazilian and South American products.",
     missionText2:
-      "We are always looking for new suppliers and clients. We bring together all the necessary players for the complete logistics process of goods until delivery to the final destination.",
+      "We are always looking for new suppliers and customers, we bring together all the players necessary for the complete logistics process of the goods, from delivery to the final destination.",
 
     // Values
     valuesTitle: "Values",
     valuesText1:
-      "We always guarantee the best quality in our services, serving our clients in the best possible way.",
+      "We always guarantee the best quality in our services, serving our customers in the best way possible.",
     valuesText2:
-      "We believe that growth and solidity are built through transparency and honesty, to have a long-lasting relationship with our clients, always respecting these values.",
+      "We believe that growth and solidity is built through transparency and honesty, in order to have a lasting relationship with our customers, always respecting these values.",
 
     // Vision
     visionTitle: "Vision",
     visionText:
-      "We wish to expand our business to reach the global market, always striving for excellence in our services, to become a global reference.",
+      "We want to expand our business until reaching the world market, always striving for excellence in our services, so that we can become a global reference.",
 
     // Products
-    productsTitle: "Products we work with",
+    productsTitle: "Products we work",
     product1: "Non-perishable products",
     product2: "Perishable products",
     product3: "Cleaning and hygiene",
     product4: "Commodities",
-    product5: "Equipment",
-    product6: "Household goods",
+    product5: "Equipments",
+    product6: "Housewares",
     product7: "Games and toys",
   },
 };

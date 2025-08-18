@@ -23,6 +23,7 @@ const translations = {
     home: "Home",
   },
   en: {
+    home: "Home",
     navegue: "BROWSE",
     address:
       "Avenida Brasil, 1500 Ed. New York – Sala 207, Vila Frezzarim, Americana – SP, 13465-785 – Brazil",

@@ -12,17 +12,23 @@ import { useLanguage } from "../../context/LanguageContext";
 
 const translations = {
   pt: {
+    titleTelefone: "Telefone",
+    titleEmail : "E-mail",
+    titleEndereco : "Endereço",
+    titledehours : "Horário de Atendimento",
     contactTitle: "Fale Conosco",
     address: "Avenida Brasil, 1500 Ed. New York – Sala 207, Vila Frezzarim, Americana – SP, 13465-785 – Brasil",
-    openingHours: "Segunda à Quinta-feira: 9h às 18h",
-    openingHoursFriday: "Sexta-feira: até as 17h",
+    openingHours: "De Segunda à sexta-feira, das 8:00h às 17:00h",
     locationTitle: "Onde Estamos Localizados",
   },
   en: {
-    contactTitle: "Contact Us",
+    titleTelefone: "Telephone",
+    titleEmail : "E-mail",
+    titleEndereco : "Address",
+    titledehours : "Opening Hours",
+    contactTitle: "Contact",
     address: "Avenida Brasil, 1500 Ed. New York – Sala 207, Vila Frezzarim, Americana – SP, 13465-785 – Brazil",
-    openingHours: "Monday to Thursday: 9am to 6pm",
-    openingHoursFriday: "Friday: until 5pm",
+    openingHours: "Monday to Friday, from 8:00 to 17:00",
     locationTitle: "Where We Are Located",
   },
 };
@@ -41,46 +47,31 @@ export default function Contato() {
           <div className="contatoContainer">
             <div className="contatoItem">
               <CiPhone className="contatoIcon" />
+              <p>{t.titleTelefone}:</p>
               <p>(19) 3013-4040</p>
             </div>
 
             <div className="contatoItem">
               <TfiEmail className="contatoIcon" />
+              <p>{t.titleEmail}:</p>
               <p>contato@movaimpex.com.br</p>
             </div>
 
             <div className="contatoItem">
               <FaLocationDot className="contatoIcon" />
-              <p>{t.address}</p>
+              <p>{t.titleEndereco}: {t.address}</p>
             </div>
 
             <div className="contatoItem">
               <MdAccessTime className="contatoIcon" />
+              <p>{t.titledehours}:</p>
               <p>
-                {t.openingHours} <br />
+                {t.openingHours}<br />
                 {t.openingHoursFriday}
               </p>
             </div>
           </div>
 
-          <div className="mapaContato">
-            <div className="mapaTitle">
-              <div className="listraText"></div>
-              <p style={{ fontSize: "28px", fontWeight: "medium" }}>
-                {t.locationTitle}
-              </p>
-            </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.312752922606!2d-47.354208225406126!3d-22.753771832418977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89bd854865baf%3A0xf6b36cd929c692ee!2sAmerican%20Square%20-%20Torre%20New%20York!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
-              width="800"
-              height="300"
-              style={{ border: 1, borderRadius: "12px" }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="mapaContainer"
-            ></iframe>
-          </div>
         </div>
       </div>
 

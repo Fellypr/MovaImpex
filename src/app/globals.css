@@ -78,14 +78,9 @@ a {
         height: 40px;
         border-radius: 12px;
         border: none;
-        background-color: #0004ff;
-        color: white;
-      }
-      & .bannerButton:hover {
         background-color: #fdfdfd;
-        color: black;
+        color: #21a2bf;
         cursor: pointer;
-       
       }
     }
   }
@@ -97,14 +92,14 @@ a {
   align-items: center;
   height: auto;
   padding: 10px;
-  margin-top: 4rem;
+  margin-top: 1rem;
   & .oqueMovaPodeFazerSection {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 95%;
-    height: auto;
+    height: 150vh;
     & .TextMain {
       display: flex;
       justify-content: center;

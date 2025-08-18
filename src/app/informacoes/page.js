@@ -53,7 +53,7 @@ const translations = {
   },
   en: {
     // Titles and subtitles
-    mainTitle: "Records issued by Siscomex",
+    mainTitle: "Registrations issued by Siscomex",
     importTitle: "Import",
     exportTitle: "Export",
     containerTitle: "Types of containers",
@@ -63,27 +63,31 @@ const translations = {
 
     // Lists and descriptive texts
     importList: [
-      "I.L. Import License (Licença de Importação)",
-      "I.L. Extract",
-      "I.D. Import Declaration (Declaração de Importação)",
-      "I.D. Extract",
-      "F.O.R. Financial Operation Record (Registro de Operação Financeira).",
-      "I.C. Import Certificate (Comprovante de Importação)",
+      "I.L. Import License",
+      "L.I.",
+      "I.D. Import Declaration",
+      "D.I.",
+      "C.I. Import Proof",
+      "RF Financial Transaction Registration.",
     ],
     exportList: [
-      "E.R. Export Record (Registro de Exportação)",
-      "S.R. Sales Record (Registro de Venda)",
-      "C.O.R. Credit Operation Record (Registro de Operação de Crédito)",
-      "D.R. Dispatch Request (Solicitação de Despacho)",
-      "E.C. Export Certificate (Comprovante de Exportação)",
+      "R.E. Export Registration",
+      "R.V. Sale Registration",
+      "R.O.C. Credit Operation Registration",
+      "S.D. Dispatch Request",
+      "C.E. Export Proof",
     ],
-    differenceText1: "Direct export occurs when the selling company negotiates directly with the buyer located abroad. In other words, there is no intermediary in the transaction.",
-    differenceText2: "Indirect export, on the other hand, is carried out through the intermediation of a company. The national seller does not perform the export itself but sells to another company located in the country, therefore, a sale on the domestic market, and the latter will carry out the export operation.",
-    siscomexText: "Siscomex is a computerized instrument through which government control of Brazilian foreign trade is exercised. Its purpose is to connect the main users of the system: exporters; importers; Federal Revenue Service (Ministry of Finance); Foreign Trade Secretariat (Ministry of Industry, Commerce, and Tourism); Central Bank of Brazil; Banco do Brasil S.A. and banks authorized to operate in foreign currency exchange; legal representatives of exporting and importing companies; transport companies; and other secretariats and departments of other ministries, directly related to various aspects of Brazilian foreign trade.",
-    ncmHsText1: "The NCM and HS Code are numbers that each product has to know its true classification. It is a way to have security and know what is being imported.",
-    ncmHsText2: "All products acquired outside Brazil need a specific codification to have the correct description of each merchandise. And the HS Code is a universal standard, whose specifications are known worldwide.",
-    ncmHsText3: "The HS Code is a universal code, through which you can know the type of merchandise that will be transported to another country. This number is necessary for importation.",
-    ncmHsText4: "The code has 8 digits, and for HS Code they are divided into sectors, to know the classifications for each type of merchandise. The first two digits are called chapters, the next two are the position, the next two are the sub-position, and the rest already adapts to the NCM codification.",
+
+    differenceText1: "Direct export occurs when the selling company negotiates directly with the buyer located abroad. In other words, there is no middleman in the transaction",
+
+    differenceText2: "Indirect export, in turn, is carried out through the intermediation of a firm. The national seller does not carry out the export itself, but sells to another company, located in the country, therefore, a sale in the domestic market, and the latter will carry out the export operation.",
+
+    siscomexText: "Siscomex is a computerized instrument in which government control of Brazilian foreign trade is exercised. Its purpose is to connect the main users of the system: exporters; importers; Federal Revenue Secretariat (Ministry of Finance); Foreign Trade Secretariat (Ministry of Trade and Tourism Industry); Brazilian central bank; Banco do Brasil S.A. and banks authorized to operate in foreign currency exchange; legal representatives of exporting and importing companies; transport companies; and other departments of diferent ministries, directly related to various aspects of Brazilian foreign trade.",
+
+    ncmHsText1: "The NCM code and HS Code are numbers that each product has to know its true classification. A way to have security and know what is being imported.",
+    ncmHsText2: "All products that purchased from Brazil, need a specific coding to have the correct description of each merchandise. And the HS Code is a universal standard where everyone knows its specifications.",
+    ncmHsText3: "The HS Code is a universal code, through which you can find out which type of merchandise will be transported to another country. And this number is required for import.",
+    ncmHsText4: "The code has 8 digits, and for HS Code they are divided by sectors, to know what the classifications are for each type of merchandise. In which the first two digits are called chapters, the two next to the position, the other two sub-position and the rest is already suitable for the NCM coding",
   },
 };
 

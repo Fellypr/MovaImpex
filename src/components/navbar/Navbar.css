@@ -67,13 +67,9 @@ a {
     font-weight: 550;
     font-size: 16px;
     color: #353535;
-      & a:hover{
-        color: #21A2BF;
-      }
-      & a:focus{
-        
-        color: #21A2BF;
-      }
+  }
+  & a:hover{
+    color: #000000;
   }
 }
 
@@ -87,13 +83,7 @@ a {
   & h2{
     font-weight: 500;
     font-size: 12px;
-      & a:hover{
-        color: #21A2BF;
-      }
-      & a:focus{
-        
-        color: #21A2BF;
-      }
+      
   }
 }
 }
@@ -192,13 +182,6 @@ a {
     font-weight: 500;
     font-size: 14px;
     color: white;
-      & a:hover{
-        color: #21A2BF;
-      }
-      & a:focus{
-        
-        color: #21A2BF;
-      }
   }
 }
 .languagensMobile{
@@ -222,9 +205,8 @@ a {
     transition: color 0.3s;
 }
 
-.titleNav a.active,
-.titleNav a:hover {
-    color: #007bff; /* Exemplo de cor ativa/hover */
+.titleNav a.active {
+    color: #21A2BF; /* Exemplo de cor ativa/hover */
     font-weight: bold;
 }
 
